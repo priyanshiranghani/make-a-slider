@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>make-slider</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">Records</h1>
+            <h1>filter</h1>
+            <div class="row">
+                <div class="col-md-3">
+                    <label>City</label>
+                    <select id="city" class="form-control">
+                        <option value="">All Cities</option>
+                        <option value="surat">Surat</option>
+                        <option value="amreli">amreli</option>
+                        <option value="gandhinagar">gandhinagar</option>
+                        <option value="vadodara">Vadodara</option>
+                        <option value="ahmedabad">ahmedabad</option>
+                        <option value="rajkot">Rajkot</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label >Salary</label>
+                    <input type="number" id="salary" class="form-control" placeholder="enter salary">
+                </div>
+                <div class="col-md-3">
+                    <label >Department</label>
+                    <select id="department" class="form-control">
+                        <option value="">All Departments</option>
+                        <option value="programming">Programming</option>
+                        <option value="ui/ux">UI/UX</option>
+                        <option value="bde">BDE</option>
+                        <option value="webdesign">Webdesign</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label >Designation</label>
+                    <select id="designation" class="form-control">
+                        <option value="">All Designations</option>
+                        <option value="senior">Senior</option>
+                        <option value="junior">Junior</option>
+                        <option value="tl">TL</option>
+                        <option value="manager">Manager</option>
+                    </select>
+                </div>
+            </div>
+         </div>
+
+         <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>City</th>
+                    <th>Salary</th>
+                    <th>Designation</th>
+                    <th>Department</th>
+                </tr>
+            </thead>
+            <tbody id="allRecord">
+               
+            </tbody>
+        </table>
+
+
+      
+        <div id="total" class="mt-4">
+            <h5>total</h5>
+            <p id="totalSalary">Total Salary: </p>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="java.js"></script>
+</body>
+</html>
